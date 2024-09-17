@@ -1,3 +1,12 @@
+figure {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+figcaption {
+  border: 2px dotted blue;
+}
 /* extremely basic formatting */
 body {
   font-family: 'Libre Franklin', sans-serif;
@@ -15,6 +24,6 @@ figure {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem 2rem;
 }
