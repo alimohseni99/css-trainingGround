@@ -13,26 +13,28 @@ figure {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  /*  grid-template-columns: 2fr 2fr; */
+  grid-template-areas:
+    's s'
+    'mars meteorite'
+    'mars micro'
+    'intrepid intrepid';
   gap: 1rem;
   width: 980px;
   margin: 0 auto;
 }
 .one {
-  grid-column: span 3;
+  grid-area: s;
 }
 .two {
-  grid-column: 1;
-  grid-row: 2 span 2;
+  grid-area: mars;
 }
 .three {
-  grid-column: 1 / span 2;
+  grid-area: intrepid;
 }
 .four {
-  grid-column: 2;
-  grid-row: 2;
+  grid-area: meteorite;
 }
 .five {
-  grid-column: 2;
-  grid-row: 3;
+  grid-area: micro;
 }
