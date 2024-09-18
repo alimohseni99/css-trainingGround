@@ -22,6 +22,19 @@
   border: none;
 }
 
+.feature img {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.feature p:last-child {
+  grid-row: 3/4;
+  margin-top: 2rem;
+}
+
+.feature p:not(:has(a)) {
+  display: none;
+}
 /* extremely basic formatting */
 html {
   box-sizing: border-box;
