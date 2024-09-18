@@ -13,7 +13,7 @@ figure {
 }
 .grid-container {
   display: grid;
-  /*  grid-template-columns: 2fr 2fr; */
+  grid-template-columns: 2fr 2fr;
   grid-template-areas:
     's s'
     'mars meteorite'
