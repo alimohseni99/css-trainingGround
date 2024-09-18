@@ -1,0 +1,34 @@
+.dog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.dog img:first-child {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.dog img:last-child {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  animation: fadeIn 2s infinite alternate;
+  animation: fadeOut 2s infinite alternate;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+img {
+  max-width: 100%;
+}
