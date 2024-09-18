@@ -35,6 +35,37 @@
 .feature p:not(:has(a)) {
   display: none;
 }
+
+@media (min-width: 500px) and (max-width: 699px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .feature {
+    grid-column: 1/3;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  .feature p:not(:has(a)) {
+    display: block;
+  }
+  .card {
+    display: block;
+    grid-template-columns: 1fr;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  .card:last-child {
+    border: 1px solid #ccc;
+  }
+  .card img {
+    margin-bottom: 1rem;
+  }
+}
+
 /* extremely basic formatting */
 html {
   box-sizing: border-box;
