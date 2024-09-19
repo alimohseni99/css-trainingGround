@@ -6,6 +6,10 @@
 .container > * {
   padding: 1rem;
 }
+h2,
+p {
+  margin: 0;
+}
 
 /* extremely basic formatting */
 html {
